@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Simple Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button onclick="clearResult()">C</button>
+                <button onclick="deleteCharacter()">&#9003;</button>
+                <button class="symbol" onclick="appendSymbol('.')">.</button>
+                <button class="symbol" onclick="appendSymbol('+')">+</button>
+                <button class="number" onclick="appendNumber(7)">7</button>
+                <button class="number" onclick="appendNumber(8)">8</button>
+                <button class="number" onclick="appendNumber(9)">9</button>
+                <button class="symbol" onclick="appendSymbol('-')">-</button>
+                <button class="number" onclick="appendNumber(4)">4</button>
+                <button class="number" onclick="appendNumber(5)">5</button>
+                <button class="number" onclick="appendNumber(6)">6</button>
+                <button class="symbol" onclick="appendSymbol('*')">*</button>
+                <button class="number" onclick="appendNumber(1)">1</button>
+                <button class="number" onclick="appendNumber(2)">2</button>
+                <button class="number" onclick="appendNumber(3)">3</button>
+                <button class="symbol" onclick="appendSymbol('/')">/</button>
+                <button class="number" onclick="appendNumber(0)">0</button>
+                <button class="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <footer class="footer">
+            Designed and Developed by <a href="https://github.com/applexd039">Atharva Pawar</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
